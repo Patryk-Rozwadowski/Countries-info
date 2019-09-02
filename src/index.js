@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store/index';
 import DevTools from './DevTools/devTools';
+import { getCountries } from './actions/actionCreator';
 
 render(
     <Provider store={store}>
@@ -13,3 +14,5 @@ render(
     </Provider>,
     document.getElementById('root')
 );
+
+store.dispatch(getCountries())
