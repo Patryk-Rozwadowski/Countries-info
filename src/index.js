@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Router, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store from './store/index';
-import { getCountries } from './actions/actionCreator';
+import { getCountries } from './actions/actions';
 import routes from './routes';
 
 render(
