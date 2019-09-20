@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
-import DevTools from '../DevTools/devTools';
-
 const Navigation = props => (
     <div>
         <nav className="navbar navbar-default">
@@ -10,7 +8,7 @@ const Navigation = props => (
                 <div className="navbar-header">
                     <Link className="navbar-brand" to="/">Państwa.js</Link>
                 </div>
-                <div className="collapse navbar-collapse">
+                <div className="navbar-collapse">
                     <ul className="nav navbar-nav">
                         <li><Link to="/countries">Countries</Link></li>
                         <li><Link to="/continents">Continents</Link></li>
@@ -22,7 +20,6 @@ const Navigation = props => (
         <div className="container-fluid">
             {props.children}
         </div>
-        <DevTools />
     </div>
 );
 
